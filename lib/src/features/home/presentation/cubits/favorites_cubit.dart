@@ -23,7 +23,7 @@ class FavoritesCubit extends VeryGoodVentureCubit<FavoritesState> {
     emit(state.copyWith(status: Status.loading));
     final result = await _getAllFavoriteImagesUsecase();
     result.fold(
-      (failure) => emit(state.copyWith(exception: failure)),
+      (failure) => emit(state.copyWith(exception: failure, status: Status.error)),
       (coffees) => emit(state.copyWith(status: Status.success, coffees: coffees)),
     );
   }
