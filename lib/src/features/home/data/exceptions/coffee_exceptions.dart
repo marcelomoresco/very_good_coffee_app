@@ -11,3 +11,7 @@ class CoffeeParseException extends BaseException {
 class CoffeeSaveException extends BaseException {
   CoffeeSaveException({required super.message});
 }
+
+class CoffeeLocalStorageException extends BaseException {
+  CoffeeLocalStorageException({required super.message});
+}

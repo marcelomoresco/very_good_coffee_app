@@ -1,4 +1,5 @@
 import 'package:coffee_venture_app/src/core/db/coffee_local_storage.dart';
+import 'package:coffee_venture_app/src/features/home/data/exceptions/coffee_exceptions.dart';
 import 'package:coffee_venture_app/src/features/home/domain/entities/coffee.dart';
 
 abstract class HomeLocalDataSource {
@@ -17,22 +18,34 @@ class HomeLocalDataSourceImpl implements HomeLocalDataSource {
     try {
       return await storage.getFavorites();
     } catch (e) {
-      rethrow;
+      throw CoffeeLocalStorageException(message: e.toString());
     }
   }
 
   @override
   Future<void> saveFavoriteCoffeeImage(Coffee coffee) async {
-    await storage.addFavorite(coffee);
+    try {
+      await storage.addFavorite(coffee);
+    } catch (e) {
+      throw CoffeeLocalStorageException(message: e.toString());
+    }
   }
 
   @override
   Future<void> removeFavoriteCoffeeImage(String url) async {
-    await storage.removeFavorite(url);
+    try {
+      await storage.removeFavorite(url);
+    } catch (e) {
+      throw CoffeeLocalStorageException(message: e.toString());
+    }
   }
 
   @override
   Future<bool> isFavoriteCoffee(String url) async {
-    return await storage.isFavorite(url);
+    try {
+      return await storage.isFavorite(url);
+    } catch (e) {
+      throw CoffeeLocalStorageException(message: e.toString());
+    }
   }
 }
