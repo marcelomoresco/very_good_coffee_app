@@ -11,6 +11,7 @@
   "favoritesSaveError": "An error occurred while saving favorite.",
   "@_ERRORS_@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@": {},
   "errorTitle": "An error occurred.",
+  "somethingWentWrong": "Something went wrong, while using the app.",
   "tryAgain": "Try Again",
   "errorMessage": "Error: {message}"
 }

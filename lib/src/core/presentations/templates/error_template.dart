@@ -1,6 +1,7 @@
 import 'package:coffee_venture_app/src/core/errors/failure.dart';
 import 'package:coffee_venture_app/src/core/extensions/context_extension.dart';
 import 'package:design_system/design_system.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ErrorTemplate extends StatelessWidget {
@@ -19,7 +20,11 @@ class ErrorTemplate extends StatelessWidget {
         children: [
           Text(':(', style: context.textStyles.titleExtra),
           Text(context.intl.errorTitle, style: context.textStyles.titleMedium),
-          if (exception != null) Text('Error: ${exception!.message}', style: context.textStyles.bodyMedium),
+          if (exception != null)
+            Text(
+              'Error: ${kDebugMode ? exception!.message : context.intl.somethingWentWrong}',
+              style: context.textStyles.bodyMedium,
+            ),
           if (onRetry != null)
             Padding(
               padding: const EdgeInsets.only(top: 12.0),

@@ -34,6 +34,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errorTitle => 'An error occurred.';
 
   @override
+  String get somethingWentWrong => 'Something went wrong, while using the app.';
+
+  @override
   String get tryAgain => 'Try Again';
 
   @override

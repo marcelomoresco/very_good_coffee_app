@@ -142,6 +142,12 @@ abstract class AppLocalizations {
   /// **'An error occurred.'**
   String get errorTitle;
 
+  /// No description provided for @somethingWentWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong, while using the app.'**
+  String get somethingWentWrong;
+
   /// No description provided for @tryAgain.
   ///
   /// In en, this message translates to:
