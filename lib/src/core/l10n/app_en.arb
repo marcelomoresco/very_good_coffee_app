@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "@_COFFEE_@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@": {},
+  "coffee": "Coffee",
+  "coffeeSave": "Save",
+  "coffeeNext": "Next",
+  "@_FAVORITES_@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@": {},
+  "favorites": "Favorites",
+  "favoritesEmptyTitle": "No favorites yet",
+  "favoritesEmptyDescription": "You don't have any favorite images yet.\nWhen you do, they'll show up here.",
+  "favoritesSaveError": "An error occurred while saving favorite.",
+  "@_ERRORS_@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@": {},
+  "errorTitle": "An error occurred.",
+  "tryAgain": "Try Again",
+  "errorMessage": "Error: {message}"
+}
