@@ -28,6 +28,11 @@ genhtml coverage/lcov.info -o coverage/
 open coverage/index.html
 ```
 
+## Demo
+
+https://github.com/user-attachments/assets/cb1d195d-5778-4a22-aac2-7778cfcb2ebe
+
+
 ## Structure
 
 ```
@@ -36,6 +41,7 @@ lib/
 ├── features/        # feature-based modules (e.g., home, favorites)
 └── design_system/   # reusable UI components built following Atomic Design
 ```
+
 
 ## Summary
 
